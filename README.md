@@ -29,4 +29,5 @@ Hospedagem do projeto será um diferencial e poderá ser feita em qualquer host 
 11. Subi o repositorio da aplicaçao para o GitHub.
 12. Fiz o deploy pela Vercel.
 # Para rodar
-1. para rodar a aplicaçao basta utilizar yarn dev na cli
+1. para rodar a aplicaçao basta utilizar yarn dev ou yarn build na cli
+2. ou ir direto para o site : https://github-api-gamma.vercel.app/
