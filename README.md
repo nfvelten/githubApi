@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# gitApi
+Created: 2021-10-20 16:50
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ O teste consiste em consultar a API do Github para buscar repositórios, utilizando React JS.
+ ## Requisitos:
+Os filtros abaixo devem resultar em uma lista de repositórios do Github, não é requisito efetuar paginação, basta trazer os 50 primeiros repositórios.
+Observe que só é possível filtrar repositórios por linguagem após digitar algum texto.
+1. Filtrar repositórios por texto.
+2. Filtrar repositórios por texto + linguagem.
+3. Filtrar repositórios por texto + múltiplas linguagens.
+4. Mostrar detalhes dos repositórios (nome, descrição, linguagem e link externo).
+5. Adicionar ao longo do código comentários que esclareçam a lógica utilizada em suas funções.
+6. O layout desta aplicação fica a seu critério, responsividade será um diferencial.
+A não conclusão do teste não será desclassificatória, serão avaliados critérios como uso de lógica, conhecimento da tecnologia e organização.
+A entrega deve ser feita através de um repositório público no Github.
+Adicione um arquivo com instruções para execução do projeto.
+Hospedagem do projeto será um diferencial e poderá ser feita em qualquer host de páginas estáticas. (AWS, Github Pages, Vercel e etc) 
+## Processo
+1. Usei o Next para inicializar o projeto.
+2. Apos isso instalei o axios e o material ui.
+3. Fiz a configuraçao do axios com o ID e o secret do github, armazenado em uma variavel de ambiente .env.
+4. Criei uma funcao para fazer o fetch da API, e armazenei o resultado com o useState.
+5. Depois criei um form para poder requisitar o nome e a linguagem do repositorio.
+6. Utilizei o useState para poder armazenar os valores do input.
+7. Funcao onChange e onSubmit para enviar o formulario e requisitar os repositorios.
+8. Mapeei os repositorios com .map e desetruturizei o resultado para pegar os valores {name, description, url, language}.
+9. Utilizei um component de card do material ui para poder listar as informaçoes
+10. Botao para redirecionar ao repositorio adicionado.
+11. Subi o repositorio da aplicaçao para o GitHub.
+12. Fiz o deploy pela Vercel.
+# Para rodar
+1. para rodar a aplicaçao basta utilizar yarn dev na cli
