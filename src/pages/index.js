@@ -81,7 +81,7 @@ export default function Home() {
                       </CardContent>
                       <CardActions>
                         <Link href={`https://github.com/${full_name}`} passHref>
-                          <Button size="small">Learn More</Button>
+                          <Button size="small">Ir para o repositorio</Button>
                         </Link>
                       </CardActions>
                     </Card>
